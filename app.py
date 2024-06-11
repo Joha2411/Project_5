@@ -2,7 +2,8 @@ import pandas as pd
 import plotly.express as px
 import streamlit as st
 
-st.header("Crear gráfico")    
+st.header("Crear gráfico")
+st.write("Podrás crear a través de los siguientes botones un gráfico histograma o un gráfico de dispersión con información relacionada con el conjunto de datos de venta de coches")    
 car_data = pd.read_csv('vehicles_us.csv') # leer los datos
 hist_button = st.button('Histograma') # crear un botón
 dis_button = st.button("Dispersión") # crear un boton
